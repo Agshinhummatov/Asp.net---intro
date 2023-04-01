@@ -11,7 +11,7 @@ namespace Tasks.Controllers
             int[] fibNumbers = new int[20];
             fibNumbers[0] = a;
             fibNumbers[1] = b;
-            for (int i = 2; i < 20; i++)
+            for (int i = 2; i < fibNumbers.Length; i++)
             {
                 int c = a + b;   
                 a = b;  
@@ -20,6 +20,7 @@ namespace Tasks.Controllers
             }
 
             return View(fibNumbers);
+
         }
 
 
